@@ -12,15 +12,16 @@ import java.util.List;
 public class ListChampionsUseCaseIntegrationTest {
 
     @Autowired
-    private ListChampionsUseCase listChampionsUseCase;
-
+    private ListChampionUseCase listChampionUseCase; 
+    
     @Test
     public void testListChampions() {
-        List<Champions> champions = listChampionsUseCase.findAll();
+        List<Champions> champions = listChampionUseCase.findAll();
 
         Assertions.assertEquals(12, champions.size());
 
     }
 }
-    
+
+   
 
